@@ -1,0 +1,94 @@
+/* slider */
+.slider {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .swiper__slider {
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+  }
+
+  &__section {
+    display: flex;
+    height: 100%;
+    background-color: #fff;
+  }
+  &__content {
+    width: 40%;
+    height: 100%;
+  }
+  &__media {
+    width: 60%;
+    height: 100%;
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 120px;
+    padding-left: 150rem;
+    font-size: 70rem;
+    font-weight: bold;
+    line-height: 1.45;
+  }
+  &__phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 20rem;
+    overflow: hidden;
+  }
+  &__phone-wrap {
+    width: 550rem;
+    max-height: 100%;
+    position: relative;
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    &:after {
+      content: '';
+      display: block;
+      padding-top: 160%;
+    }
+  }
+  &__phone-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 1200rem;
+    }
+  }
+}
+/* /slider */

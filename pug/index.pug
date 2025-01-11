@@ -6,55 +6,42 @@ html(lang="ru")
     meta(name="robots" content="noindex, nofollow")
     title Grasiona
     link(rel="stylesheet" href="css/main.css")
+    link(rel="stylesheet", href="css/plugins/swiper-bundle.min.css")
   body 
 
-    <section class="first">
-      <div class="outer">
-        <div class="inner">
-          <div class="bg one">
-            <h2 class="section-heading">Scroll down</h2>
-          </div>
-        </div>
-      </div>
+    .callback 
+      button.btn.callback__btn 
+        span Оставить заявку
 
-    </section>
-    <section class="second">
-      <div class="outer">
-        <div class="inner">
-          <div class="bg">
-            <h2 class="section-heading">Animated with GSAP</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="third">
-      <div class="outer">
-        <div class="inner">
-          <div class="bg">
-            <h2 class="section-heading">GreenSock</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="fourth">
-      <div class="outer">
-        <div class="inner">
-          <div class="bg">
-            <h2 class="section-heading">Animation platform</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="fifth">
-      <div class="outer">
-        <div class="inner">
-          <div class="bg">
-            <h2 class="section-heading">Keep scrolling</h2>
-          </div>
-        </div>
-      </div>
-    </section>
+    .slider 
+      
+      #swiper.swiper__slider
+        .swiper-wrapper 
+          .swiper-slide 
+            section.slider__section
+              .slider__content 
+                .slider__text Купим вашу<br>квартиру<br>за 24 часа
+              .slider__media 
+                .slider__phone 
+                  .slider__phone-wrap
+                    img(src="img/phone.png", alt="")
+                    .slider__phone-img 
+                      img(src="img/phone_img-1.png", alt="")
+                      img(src="img/phone_img-2.png", alt="")
+                      img(src="img/phone_img-3.png", alt="")
+          .swiper-slide 
+            section.slider__section
+              .slider__content 
+                .slider__text Надо срочно продать квартиру?
+              .slider__media 
+                .slider__img 
+                  img(src="img/img-1.png", alt="")
+          //- .swiper-slide 
+          //-   section.slider__section
+      
 
-    script(src="js/plugins/Observer.min.js") 
-    script(src="js/plugins/gsap.min.js") 
+    //- script(src="js/plugins/splitText.js") 
+    //- script(src="js/plugins/Observer.min.js") 
+    //- script(src="js/plugins/gsap.min.js") 
+    script(src="js/plugins/swiper-bundle.min.js") 
     script(src="js/scripts.js")

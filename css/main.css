@@ -1,116 +1,295 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, svg {
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* /reset */
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ArialMT.eot?") format("eot"), url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff"), url("../fonts/ArialMT.ttf") format("truetype"), url('../fonts/ArialMT.svg#str-replace("Arial", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Arial-BoldMT.eot?") format("eot"), url("../fonts/Arial-BoldMT.woff2") format("woff2"), url("../fonts/Arial-BoldMT.woff") format("woff"), url("../fonts/Arial-BoldMT.ttf") format("truetype"), url('../fonts/Arial-BoldMT.svg#str-replace("Arial", " ", "_")') format("svg");
+  font-display: swap;
+}
+/* settings */
+a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.0520833333vw;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 319px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+/* /settings */
+/* slider */
+.slider {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.slider .swiper__slider {
+  height: 100%;
+}
+.slider .swiper-wrapper {
+  height: 100%;
+}
+.slider__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  background-color: #fff;
+}
+.slider__content {
+  width: 40%;
+  height: 100%;
+}
+.slider__media {
+  width: 60%;
+  height: 100%;
+}
+.slider__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 120px;
+  padding-left: 150rem;
+  font-size: 70rem;
+  font-weight: bold;
+  line-height: 1.45;
+}
+.slider__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20rem;
+  overflow: hidden;
+}
+.slider__phone-wrap {
+  width: 550rem;
+  max-height: 100%;
+  position: relative;
+}
+.slider__phone-wrap > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.slider__phone-wrap:after {
+  content: "";
+  display: block;
+  padding-top: 160%;
+}
+.slider__phone-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slider__phone-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top center;
+  object-position: top center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.slider__img img {
+  width: 1200rem;
+}
+
+/* /slider */
+/* btn */
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5rem 20rem 5rem 50rem;
+  min-width: 215rem;
+  height: 50rem;
+  background: -o-linear-gradient(160deg, #015306, #01A30B);
+  background: linear-gradient(-70deg, #015306, #01A30B);
+  border-radius: 100rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14rem;
+  font-weight: bold;
+  cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  color: white;
-  background: black;
-  font-family: "Cormorant Garamond", serif;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: clamp(1rem, 5vw, 5rem);
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 0.5em;
-  margin-right: -0.5em;
-  width: 90vw;
-  max-width: 1200px;
-}
-
-header {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0 5%;
-  width: 100%;
-  z-index: 3;
-  height: 7em;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(0.66rem, 2vw, 1rem);
-  letter-spacing: 0.5em;
-}
-
-section {
-  height: 100%;
-  width: 100%;
-  top: 0;
-  position: fixed;
-  visibility: hidden;
-}
-section .outer,
-section .inner {
-  width: 100%;
-  height: 100%;
-  overflow-y: hidden;
-}
-section .bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.btn:before {
+  content: "";
+  display: block;
+  background: -o-linear-gradient(340deg, #015C07, #018B0A);
+  background: linear-gradient(110deg, #015C07, #018B0A);
+  border-radius: 100rem;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  background-size: cover;
-  background-position: center;
-}
-section .bg h2 {
+  top: 5rem;
+  left: 5rem;
+  bottom: 5rem;
+  right: 5rem;
   z-index: 2;
 }
-section .bg .clip-text {
-  overflow: hidden;
+.btn:after {
+  content: "";
+  display: block;
+  width: 40rem;
+  height: 40rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='49.000000' height='49.000000' viewBox='0 0 49 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip2_186'%3E%3Crect id='_ (3)' width='49.000000' height='49.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3ClinearGradient x1='11.999999' y1='-2.000003' x2='35.079487' y2='44.545494' id='paint_linear_2_187_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFFFF'/%3E%3Cstop offset='1.000000' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3ClinearGradient x1='10.888538' y1='7.077861' x2='36.477448' y2='44.644501' id='paint_linear_2_188_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23A7A7A7'/%3E%3Cstop offset='1.000000' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg clip-path='url(%23clip2_186)'%3E%3Ccircle id='circle' cx='24.500000' cy='24.500000' r='24.500000' fill='url(%23paint_linear_2_187_0)' fill-opacity='1.000000'/%3E%3Ccircle id='circle' cx='24.455078' cy='24.461296' r='19.943199' fill='url(%23paint_linear_2_188_0)' fill-opacity='1.000000'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: contain;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  z-index: 3;
+}
+.btn span {
+  position: relative;
+  z-index: 4;
+}
+.btn:hover {
+  -webkit-box-shadow: 0 0 50px rgba(2, 225, 17, 0.5);
+  box-shadow: 0 0 50px rgba(2, 225, 17, 0.5);
 }
 
-.first .bg {
-  background-color: red;
+/* /btn */
+/* callback */
+.callback__btn {
+  position: fixed;
+  top: 33rem;
+  left: 80rem;
+  z-index: 5;
 }
 
-.second .bg {
-  background-color: green;
-}
-
-.third .bg {
-  background-color: blue;
-}
-
-.fourth .bg {
-  background-color: purple;
-}
-
-.fifth .bg {
-  background-color: yellow;
-}
-
-h2 * {
-  will-change: transform;
-}
+/* /callback */
