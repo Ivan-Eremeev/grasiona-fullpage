@@ -3,7 +3,7 @@ window.onload = function () {
 
   let sections = document.querySelectorAll("section"),
     images = document.querySelectorAll(".bg"),
-    headings = gsap.utils.toArray(".section-heading"),
+    // headings = gsap.utils.toArray(".section-heading"),
     outerWrappers = gsap.utils.toArray(".outer"),
     innerWrappers = gsap.utils.toArray(".inner"),
     // splitHeadings = headings.map(heading => new SplitText(heading, { type: "chars,words,lines", linesClass: "clip-text" })),
