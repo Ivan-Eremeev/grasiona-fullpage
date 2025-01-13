@@ -36,6 +36,7 @@
     height: 36px;
     background-image: url("data:image/svg+xml,%3Csvg width='49.000000' height='49.000000' viewBox='0 0 49 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip2_186'%3E%3Crect id='_ (3)' width='49.000000' height='49.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3ClinearGradient x1='11.999999' y1='-2.000003' x2='35.079487' y2='44.545494' id='paint_linear_2_187_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFFFF'/%3E%3Cstop offset='1.000000' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3ClinearGradient x1='10.888538' y1='7.077861' x2='36.477448' y2='44.644501' id='paint_linear_2_188_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23A7A7A7'/%3E%3Cstop offset='1.000000' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg clip-path='url(%23clip2_186)'%3E%3Ccircle id='circle' cx='24.500000' cy='24.500000' r='24.500000' fill='url(%23paint_linear_2_187_0)' fill-opacity='1.000000'/%3E%3Ccircle id='circle' cx='24.455078' cy='24.461296' r='19.943199' fill='url(%23paint_linear_2_188_0)' fill-opacity='1.000000'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -48,6 +49,21 @@
   }
   &:hover {
     box-shadow: 0 0 50px rgba(2,225,17,0.5);
+  }
+  @media (max-width: $break_xl) {
+    width: 250px;
+    height: 54px;
+    font-size: 16px;
+    &::before {
+      top: 7px;
+      bottom: 7px;
+      left: 7px;
+      right: 7px;
+    }
+    &:after {
+      width: 44px;
+      height: 44px;
+    }
   }
   @media (max-width: $break_lg) {
     width: 370px;

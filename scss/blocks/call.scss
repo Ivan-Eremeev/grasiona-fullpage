@@ -21,6 +21,14 @@
       box-shadow: 0 0 50px rgba(2, 225, 17, 0.5);
     }
   }
+  @media (max-width: $break_xl) {
+    &__btn {
+      width: 52px;
+      height: 52px;
+      bottom: 60rem;
+      right: 45rem;
+    }
+  }
   @media (max-width: $break_lg) {
     &__btn {
       width: 77px;

@@ -7,6 +7,11 @@
     left: 80rem;
     z-index: 5;
   }
+  @media (max-width: $break_xl) {
+    &__btn {
+      top: 60rem;
+    }
+  }
   @media (max-width: $break_lg) {
     &__btn {
       padding-left: 80px;
