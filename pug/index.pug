@@ -9,6 +9,10 @@ html(lang="ru")
     link(rel="stylesheet", href="css/plugins/swiper-bundle.min.css")
   body 
 
+    .menu 
+      .menu__hamburger 
+        img(src="img/hamburger.svg", alt="")
+
     .callback 
       button.btn.callback__btn 
         span Оставить заявку
@@ -20,7 +24,9 @@ html(lang="ru")
           .swiper-slide 
             section.slider__section
               .slider__content 
-                .slider__text Купим вашу<br>квартиру<br>за 24 часа
+                .slider__text.slider__text--1 
+                  p Купим вашу квартиру за 24 часа
+                  span.slider__typed-cursor |
               .slider__media 
                 .slider__phone 
                   .slider__phone-wrap
@@ -32,16 +38,27 @@ html(lang="ru")
           .swiper-slide 
             section.slider__section
               .slider__content 
-                .slider__text Надо срочно продать квартиру?
+                .slider__text 
+                  p Надо срочно продать квартиру?
+                  span.slider__typed-cursor |
               .slider__media 
                 .slider__img 
                   img(src="img/img-1.png", alt="")
           //- .swiper-slide 
           //-   section.slider__section
+
+    .home-btn 
+      a(href="https://grasiona.ru/").btn
+        span ГРАСИОНА
+
+    .call 
+      .call__btn 
+        img(src="img/call.svg", alt="")
       
 
     //- script(src="js/plugins/splitText.js") 
     //- script(src="js/plugins/Observer.min.js") 
-    //- script(src="js/plugins/gsap.min.js") 
+    script(src="js/plugins/TextPlugin.min.js") 
+    script(src="js/plugins/gsap.min.js") 
     script(src="js/plugins/swiper-bundle.min.js") 
     script(src="js/scripts.js")
