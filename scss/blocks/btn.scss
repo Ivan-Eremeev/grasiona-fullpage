@@ -3,15 +3,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5rem 20rem 5rem 50rem;
-  min-width: 215rem;
-  height: 46rem;
+  padding: 5px 20px 5px 50px;
+  min-width: 215px;
+  height: 46px;
   background: linear-gradient(-70deg, #015306, #01A30B);
-  border-radius: 100rem;
+  border-radius: 100px;
   border: none;
   outline: none;
   color: #fff;
-  font-size: 14rem;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   user-select: none;
@@ -21,32 +21,68 @@
     content: '';
     display: block;
     background: linear-gradient(110deg, #015C07, #018B0A);
-    border-radius: 100rem;
+    border-radius: 100px;
     position: absolute;
-    top: 5rem;
-    left: 5rem;
-    bottom: 5rem;
-    right: 5rem;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
     z-index: 2;
   }
   &:after {
     content: '';
     display: block;
-    width: 36rem;
-    height: 36rem;
+    width: 36px;
+    height: 36px;
     background-image: url("data:image/svg+xml,%3Csvg width='49.000000' height='49.000000' viewBox='0 0 49 49' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip2_186'%3E%3Crect id='_ (3)' width='49.000000' height='49.000000' fill='white' fill-opacity='0'/%3E%3C/clipPath%3E%3ClinearGradient x1='11.999999' y1='-2.000003' x2='35.079487' y2='44.545494' id='paint_linear_2_187_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFFFFF'/%3E%3Cstop offset='1.000000' stop-color='%23B1B1B1'/%3E%3C/linearGradient%3E%3ClinearGradient x1='10.888538' y1='7.077861' x2='36.477448' y2='44.644501' id='paint_linear_2_188_0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23A7A7A7'/%3E%3Cstop offset='1.000000' stop-color='%23FFFFFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg clip-path='url(%23clip2_186)'%3E%3Ccircle id='circle' cx='24.500000' cy='24.500000' r='24.500000' fill='url(%23paint_linear_2_187_0)' fill-opacity='1.000000'/%3E%3Ccircle id='circle' cx='24.455078' cy='24.461296' r='19.943199' fill='url(%23paint_linear_2_188_0)' fill-opacity='1.000000'/%3E%3C/g%3E%3C/svg%3E%0A");
     background-size: contain;
     position: absolute;
-    top: 5rem;
-    left: 5rem;
+    top: 5px;
+    left: 5px;
     z-index: 3;
   }
   span {
     position: relative;
     z-index: 4;
+    white-space: nowrap;
   }
   &:hover {
     box-shadow: 0 0 50px rgba(2,225,17,0.5);
+  }
+  @media (max-width: $break_lg) {
+    width: 370px;
+    height: 80px;
+    font-size: 26px;
+    &:before {
+      top: 10px;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+    }
+    &:after {
+      width: 60px;
+      height: 60px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    width: 240px;
+    height: 54px;
+    font-size: 16px;
+    padding-left: 60px;
+    &:before {
+      top: 6px;
+      bottom: 6px;
+      left: 6px;
+      right: 6px;
+    }
+    &:after {
+      width: 44px;
+      height: 44px;
+      top: 5px;
+      left: 5px;
+    }
   }
 }
 /* /btn */

@@ -43,7 +43,7 @@ window.onload = function () {
   // Анимация печатной машинки
   function printText(index) {
     let headingCurrent = headings[index];
-    let headingCurrentText = headingCurrent.textContent;
+    let headingCurrentText = headingCurrent.innerHTML;
     headingCurrent.style = 'display: inline';
     headingCurrent.textContent = '';
     gsap.to(headingCurrent, 1.5, {

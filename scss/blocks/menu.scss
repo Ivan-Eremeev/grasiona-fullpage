@@ -19,5 +19,20 @@
       box-shadow: 0 0 50px rgba(2,225,17,0.5);
     }
   }
+  @media (max-width: $break_lg) {
+    &__hamburger {
+      width: 77px;
+      height: 77px;
+      right: 30rem;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__hamburger {
+      width: 54px;
+      height: 54px;
+      right: 70rem;
+      top: 70rem;
+    }
+  }
 }
 /* /menu */

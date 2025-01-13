@@ -4,7 +4,20 @@
   left: 80rem;
   bottom: 33rem;
   .btn {
-    font-size: 24rem;
+    font-size: 24px;
+  }
+  @media (max-width: $break_lg) {
+    left: 30rem;
+    .btn {
+      font-size: 38px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    left: 70rem;
+    bottom: 70rem;
+    .btn {
+      font-size: 26px;
+    }
   }
 }
 /* /home-btn */
