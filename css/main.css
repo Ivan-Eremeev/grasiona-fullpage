@@ -123,7 +123,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  background-color: red;
+  background-color: #fff;
 }
 .slider__content {
   display: -webkit-box;
